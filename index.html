@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ellese Soledad — Multimedia Portfolio</title>
+  
+  <!-- Preconnect and Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cover Slide / Hero Frame -->
+  <section class="slide-cover hero-screen">
+    <!-- Graph Grid Canvas Background -->
+    <div class="grid-canvas"></div>
+
+    <!-- Editorial Red Bracket Container -->
+    <div class="hero-frame">
+      
+      <!-- Top Red Line & Corner Accent -->
+      <div class="frame-edge frame-top"></div>
+      <div class="frame-corner corner-tr"></div>
+
+      <!-- Top Left Vertical Barcode -->
+      <div class="barcode-vertical">
+        <div class="barcode-lines"></div>
+      </div>
+
+      <!-- Background 3-Panel Artwork Strip (1:1 Ratio) -->
+      <div class="hero-artwork-strip">
+        <div class="art-panel panel-1">
+          <img src="assets/Header1.jpg" alt="Manga Storyboard Art" onerror="this.src='assets/header1.jpg'" />
+        </div>
+        <div class="art-panel panel-2">
+          <img src="assets/Header2.jpg" alt="Character Illustration Center" onerror="this.src='assets/header2.jpg'" />
+        </div>
+        <div class="art-panel panel-3">
+          <img src="assets/Header3.jpg" alt="Metro Manila Poster Art" onerror="this.src='assets/header3.jpg'" />
+        </div>
+      </div>
+
+      <!-- Main Title Overlay -->
+      <div class="hero-title-wrap">
+        <h1 class="main-display-title">MULTIMEDIA PORTFOLIO</h1>
+        <div class="title-underline"></div>
+      </div>
+
+      <!-- Bottom Meta Row -->
+      <div class="hero-footer-row">
+        <div class="creator-name">Ellese Soledad</div>
+        <div class="barcode-horizontal">
+          <div class="barcode-lines-h"></div>
+        </div>
+      </div>
+
+      <!-- Bottom Red Line & Corner Accent -->
+      <div class="frame-edge frame-bottom"></div>
+      <div class="frame-corner corner-bl"></div>
+    </div>
+  </section>
+
+<!-- Slide 01: 2D Animation (White Graph Paper Theme with Dynamic Color Bleed) -->
+<section id="jasmin-slide" class="slide-work slide-paper">
+  <!-- Shared Grid Background Canvas -->
+  <div class="grid-canvas"></div>
+
+  <!-- Centered Video Showcase -->
+  <div class="slide-media">
+    <video id="jasmin-video" autoplay loop muted playsinline poster="assets/jasmin.jpg">
+      <source src="assets/Jasmine.mp4" type="video/mp4" />
+      <source src="assets/Jasmine.webm" type="video/webm" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Vertical Label (Flipped Direction) -->
+  <div class="slide-vertical-label ">2D ANIMATION</div>
+</section>
+
+
+  <!-- Slide 02: 3D Animation & Modelling -->
+  <section class="slide-work slide-paper slide-dual-showcase">
+    <!-- Shared Grid Background Canvas -->
+    <div class="grid-canvas"></div>
+
+    <div class="showcase-container">
+      <!-- Top Title with Red Accent Rule -->
+      <div class="showcase-header">
+        <h2 class="showcase-title">3D ANIMATION & MODELLING</h2>
+        <div class="header-red-line"></div>
+      </div>
+
+      <!-- Split Media Content (Left: Video, Right: Image) -->
+      <div class="showcase-media-grid">
+        <!-- Left Media: Portal.mp4 -->
+        <div class="media-box left-video">
+          <video autoplay loop muted playsinline poster="assets/desert-vault.jpg">
+            <source src="assets/Portal.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- Right Media: stage_2.jpg -->
+        <div class="media-box right-image">
+          <img src="assets/Stage_2.jpg" alt="3D Interior Model Scene" onerror="this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1000&auto=format&fit=crop&q=80'" />
+        </div>
+      </div>
+
+      <!-- Bottom Red Accent Line -->
+      <div class="footer-red-line"></div>
+    </div>
+  </section>
+
+<!-- Slide 03: Film Production (True-size Poster + Video) -->
+<section class="slide-work slide-film-dark">
+  <div class="dark-grid-canvas"></div>
+
+  <div class="film-frame">
+    <div class="film-red-line line-top"></div>
+
+    <div class="film-showcase">
+      <div class="film-poster-wrap">
+        <img
+          src="assets/Bagumbakal1.png"
+          alt="Bagumbakal Official Poster"
+          onerror="if (!this.dataset.failed) { this.dataset.failed = true; this.src='assets/bagumbakal1.png'; }"
+        />
+      </div>
+
+      <div class="film-video-wrap">
+        <video autoplay loop muted playsinline webkit-playsinline preload="auto">
+          <source src="assets/Bagumbakal3.mp4" type="video/mp4" />
+          <source src="assets/bagumbakal3.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <div class="film-red-line line-bottom"></div>
+  </div>
+
+  <div class="slide-vertical-label film-vertical-title">FILM PRODUCTION</div>
+</section>
+
+  <!-- Slide 04: Branding & Graphic Design -->
+  <section class="slide-editorial">
+    <div class="editorial-visual">
+      <span class="brand-badge">TAYA</span>
+      <h2>Branding Designs</h2>
+    </div>
+    <div class="editorial-body">
+      <p>
+        <strong>"Taya"</strong> is a brand of designs printed onto apparel and other physical merchandise inspired by traditional filipino games.[cite: 1]
+      </p>
+      <p>
+        Taya's designs bring a modern fun with grit like motifs for a more nostalgic feel for Young Adults.[cite: 1]
+      </p>
+    </div>
+  </section>
+
+  <!-- Slide 05: About & Contact -->
+  <section class="slide-profile">
+    <div class="profile-intro">
+      <h2>Hello world!</h2>
+      <div class="profile-text">
+        <p>
+          I’m Ellese, a multimedia student putting most of my energy into graphic design and film production, as I’ve always been drawn to visual storytelling whether through clean branding or a well-shot scene.[cite: 1] Design lets me mess around with layout, color, and typography, while on the video side, I really enjoy bringing an idea all the way from a rough script to the final edit.[cite: 1]
+        </p>
+        <br>
+        <p>
+          Combining both fields keeps things interesting and gives me a pretty broad perspective on visual arts.[cite: 1] Most of my free time goes into experimenting with new techniques, trying out different styles, and refining my overall aesthetic.[cite: 1]
+        </p>
+      </div>
+    </div>
+
+    <div class="profile-contact">
+      <span>Get in touch</span>
+      <a href="mailto:davic.ellese.soledad@gmail.com" class="email-address">davic.ellese.soledad@gmail.com</a>[cite: 1]
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
