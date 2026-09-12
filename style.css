@@ -9,9 +9,9 @@
 
 @font-face {
   font-family: 'Shrewsbury Titling';
-  src: url('./Fonts/Shrewsbury-Titling-Bold/Shrewsbury-Titling Bold.ttf') format('truetype');
+  src: url('./Fonts/Shrewsbury-Titling-Bold/Shrewsbury-Titling.ttf') format('truetype');
   font-display: swap;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 @font-face {
@@ -288,10 +288,12 @@ h1, h2, h3, h4, h5, h6,
 
 .creator-name {
   font-family: var(--font-script);
-  font-size: clamp(2.2rem, 3.8vw, 3.8rem);
+  font-size: clamp(3.2rem, 5vw, 5.3rem);
   color: #1a1a1a;
-  line-height: 1;
-  letter-spacing: -0.5px;
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+  font-weight: 400;
+  transform: none;
 }
 
 .barcode-horizontal {
