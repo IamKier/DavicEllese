@@ -2,10 +2,9 @@
 
 @font-face {
   font-family: 'CDA Me Ly Display';
-  src: local('CDA Me Ly Display'), 
-       local('CDA Me Ly Display Regular'), 
-       url('./Fonts/CDA-Me-Ly-Display.woff') format('woff');
+  src: url('./Fonts/CDA Me Ly Display 260809/CDAMeLyDisplay-Bold.woff2') format('woff2');
   font-display: swap;
+  font-weight: 700;
 }
 
 @font-face {
@@ -50,6 +49,22 @@ body {
   background: var(--dark-bg);
   color: var(--white);
   overflow-x: hidden;
+}
+
+/* Global heading/title styling */
+h1, h2, h3, h4, h5, h6,
+.main-display-title,
+.showcase-title,
+.slide-vertical-label,
+.slide-dark .project-title,
+.editorial-visual h2,
+.graphic-main-title,
+.graphic-and,
+.branding-title,
+.brand-badge,
+.film-vertical-title,
+.creator-name {
+  font-family: var(--font-display);
 }
 
 /* =========================================
