@@ -176,12 +176,13 @@ h1, h2, h3, h4, h5, h6,
 /* 3-Panel Background Strip (header1, header2, header3) */
 .hero-artwork-strip {
   position: absolute;
-  inset: 20px 16px 24px;
+  inset: 32px 26px 30px;
   display: flex;
   align-items: stretch;
   justify-content: center;
   z-index: 2;
   pointer-events: none;
+  gap: 0.35rem;
 }
 
 .art-panel {
@@ -193,8 +194,9 @@ h1, h2, h3, h4, h5, h6,
   align-items: center;
   justify-content: center;
   border-left: 1px solid rgba(0, 0, 0, 0.08);
-  transform: scale(1.08);
-  transform-origin: center;
+  transform: scale(1.12);
+  transform-origin: center center;
+  margin: 0 0.1rem;
 }
 
 .art-panel:last-child {
@@ -243,26 +245,27 @@ h1, h2, h3, h4, h5, h6,
 
 .main-display-title {
   font-family: var(--font-display);
-  font-size: clamp(3rem, 7.8vw, 10rem);
+  font-size: clamp(3.4rem, 8.8vw, 11.5rem);
   color: var(--red-bracket);
-  letter-spacing: 0.015em;
+  letter-spacing: 0.012em;
   text-transform: uppercase;
-  line-height: 0.82;
+  line-height: 0.8;
   text-align: center;
   white-space: nowrap;
   user-select: none;
   font-weight: 700;
   margin: 0;
-  padding: 0 1rem;
-  transform: scaleY(1.08);
+  padding: 0 1.25rem;
+  transform: scaleY(1.1);
+  text-shadow: 0 0 0 rgba(0,0,0,0);
 }
 
 .title-underline {
-  width: 78%;
-  max-width: 760px;
+  width: 80%;
+  max-width: 820px;
   height: 4px;
   background-color: #121212;
-  margin: 1rem 0 0 0;
+  margin: 1.2rem 0 0 0;
   border-radius: 2px;
 }
 
