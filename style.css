@@ -33,7 +33,8 @@
   --grid-line: #ececec;
 
   /* Typography mappings */
-  --font-display: 'CDA Me Ly Display', 'Arial Black', 'Impact', sans-serif;
+  --font-header: 'CDA Me Ly Display', 'Arial Black', 'Impact', sans-serif;
+  --font-display: var(--font-header);
   --font-body: 'Playpen Sans', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   --font-script: 'Celandine', 'Segoe Print', 'Bradley Hand', cursive;
 }
@@ -62,9 +63,8 @@ h1, h2, h3, h4, h5, h6,
 .graphic-and,
 .branding-title,
 .brand-badge,
-.film-vertical-title,
-.creator-name {
-  font-family: var(--font-display);
+.film-vertical-title {
+  font-family: var(--font-header);
 }
 
 /* =========================================
@@ -673,7 +673,7 @@ h1, h2, h3, h4, h5, h6,
 
 .branding-caption {
   margin: 0;
-  font-family: 'Playpen Sans', 'Segoe UI', sans-serif;
+  font-family: var(--font-body);
   font-size: clamp(0.82rem, 1vw, 1.02rem);
   line-height: 1.55;
   font-weight: 400;
@@ -683,7 +683,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .branding-caption span {
-  font-family: var(--font-display);
+  font-family: var(--font-header);
   font-size: 1.2em;
   font-weight: 700;
 }
@@ -1415,12 +1415,13 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .film-vertical-title {
-  font-family: var(--font-display);
+  font-family: var(--font-header);
   font-size: clamp(1.15rem, 2vw, 2.05rem);
   letter-spacing: 0.18em;
   color: var(--red-bracket);
   writing-mode: vertical-rl;
   text-orientation: mixed;
+  direction: rtl;
   display: flex;
   align-items: center;
   justify-content: center;
