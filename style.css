@@ -8,11 +8,10 @@
 }
 
 @font-face {
-  font-family: 'Celandine';
-  src: local('Celandine'), 
-       local('Celandine Script'), 
-       url('./Fonts/Celandine-Regular.woff') format('woff');
+  font-family: 'Shrewsbury Titling';
+  src: url('./Fonts/Shrewsbury-Titling-Bold/Shrewsbury-Titling Bold.ttf') format('truetype');
   font-display: swap;
+  font-weight: 700;
 }
 
 @font-face {
@@ -36,7 +35,7 @@
   --font-header: 'CDA Me Ly Display', 'Arial Black', 'Impact', sans-serif;
   --font-display: var(--font-header);
   --font-body: 'Playpen Sans', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-  --font-script: 'Celandine', 'Segoe Print', 'Bradley Hand', cursive;
+  --font-script: 'Shrewsbury Titling', 'Georgia', 'Times New Roman', serif;
 }
 
 * {
@@ -177,7 +176,7 @@ h1, h2, h3, h4, h5, h6,
 /* 3-Panel Background Strip (header1, header2, header3) */
 .hero-artwork-strip {
   position: absolute;
-  inset: 25px 30px;
+  inset: 20px 16px 24px;
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -194,6 +193,8 @@ h1, h2, h3, h4, h5, h6,
   align-items: center;
   justify-content: center;
   border-left: 1px solid rgba(0, 0, 0, 0.08);
+  transform: scale(1.08);
+  transform-origin: center;
 }
 
 .art-panel:last-child {
@@ -242,22 +243,23 @@ h1, h2, h3, h4, h5, h6,
 
 .main-display-title {
   font-family: var(--font-display);
-  font-size: clamp(2.4rem, 6.2vw, 6.5rem);
+  font-size: clamp(3rem, 7.8vw, 10rem);
   color: var(--red-bracket);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.015em;
   text-transform: uppercase;
-  line-height: 1;
+  line-height: 0.82;
   text-align: center;
   white-space: nowrap;
   user-select: none;
   font-weight: 700;
   margin: 0;
   padding: 0 1rem;
+  transform: scaleY(1.08);
 }
 
 .title-underline {
-  width: 60%;
-  max-width: 580px;
+  width: 78%;
+  max-width: 760px;
   height: 4px;
   background-color: #121212;
   margin: 1rem 0 0 0;
