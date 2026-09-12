@@ -264,11 +264,11 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .title-underline {
-  width: 74%;
-  max-width: 760px;
-  height: 4px;
+  width: 82%;
+  max-width: 900px;
+  height: 6px;
   background-color: #121212;
-  margin: 1rem 0 0 0;
+  margin: 1.1rem 0 0 0;
   border-radius: 2px;
 }
 
