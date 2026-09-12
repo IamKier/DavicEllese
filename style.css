@@ -110,21 +110,21 @@ h1, h2, h3, h4, h5, h6,
 /* Red Hand-Drawn Style Bounding Brackets */
 .frame-edge {
   position: absolute;
-  height: 5px;
+  height: 6px;
   background: var(--red-bracket);
   border-radius: 2px;
 }
 
 .frame-top {
   top: 0;
-  left: 0;
+  left: 18px;
   right: 18px;
 }
 
 .frame-bottom {
   bottom: 0;
   left: 18px;
-  right: 0;
+  right: 18px;
 }
 
 .frame-corner {
