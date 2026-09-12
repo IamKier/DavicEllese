@@ -176,13 +176,13 @@ h1, h2, h3, h4, h5, h6,
 /* 3-Panel Background Strip (header1, header2, header3) */
 .hero-artwork-strip {
   position: absolute;
-  inset: 26px 20px 26px;
+  inset: 18px 12px 20px;
   display: flex;
   align-items: stretch;
   justify-content: center;
   z-index: 2;
   pointer-events: none;
-  gap: 0.15rem;
+  gap: 0.1rem;
 }
 
 .art-panel {
@@ -204,10 +204,12 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .art-panel img {
-  width: 100%;
-  height: 100%;
+  width: 112%;
+  height: 112%;
   object-fit: cover;
-  object-position: center;
+  object-position: center center;
+  transform: scale(1.06);
+  transform-origin: center center;
 }
 
 /* Opacity balancing matching the slide */
