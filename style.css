@@ -98,9 +98,9 @@ h1, h2, h3, h4, h5, h6,
 /* Framed container bounded by red corners */
 .hero-frame {
   position: relative;
-  width: 96vw;
-  height: 91vh;
-  max-width: 1560px;
+  width: 97vw;
+  height: 92vh;
+  max-width: 1600px;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -130,18 +130,18 @@ h1, h2, h3, h4, h5, h6,
 .frame-corner {
   position: absolute;
   width: 3px;
-  height: 34%;
+  height: 38%;
   background: var(--red-bracket);
   border-radius: 2px;
 }
 
 .corner-tr {
-  top: 33%;
+  top: 31%;
   right: 0;
 }
 
 .corner-bl {
-  bottom: 33%;
+  bottom: 31%;
   left: 0;
 }
 
