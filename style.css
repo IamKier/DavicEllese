@@ -129,18 +129,19 @@ h1, h2, h3, h4, h5, h6,
 
 .frame-corner {
   position: absolute;
-  width: 5px;
-  height: 28px;
+  width: 3px;
+  height: 34%;
   background: var(--red-bracket);
+  border-radius: 2px;
 }
 
 .corner-tr {
-  top: 0;
+  top: 33%;
   right: 0;
 }
 
 .corner-bl {
-  bottom: 0;
+  bottom: 33%;
   left: 0;
 }
 
